@@ -25,6 +25,10 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/bgd_file_paths" />
         </provider>
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:foregroundServiceType="dataSync"
+            tools:node="merge" />
 
     </application>
 </manifest>
